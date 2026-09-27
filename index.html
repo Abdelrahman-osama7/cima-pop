@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/inpute.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body class="m-0 p-0">
+    <header class="z-20 w-full fixed">
+        <nav class="flex justify-between items-center px-4 py-5 bg-black/30 backdrop-blur-md">
+            <div class="hidden md:flex items-center gap-6">
+                <input type="text" placeholder="ابحث عن الفيلم ..." class="px-4 py-1.5 text-sm border-b-cyan-200 rounded-full text-cyan-200 placeholder-white/60 focus:outline-none focus:bg-cyan-900 transition w-48">
+                <ul class="flex space-x-6 space-x-reverse">
+                <li><a href="#" class="transition text-amber-100 font-bold">الرئيسية</a></li> 
+                <li><a href="#" class="transition text-amber-100 ml-10 font-bold">تواصل معنا</a></li> 
+                <li><a href="#" class="transition text-amber-100 font-bold">التصنيفات</a></li> 
+                <li><a href="#" class="transition text-amber-100 font-bold">الافلام</a></li>  
+                </ul>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-xl md:text-2xl font-bold text-cyan-500 mr-4 md:mr-8 ">CIMA-FLIX</span>
+            </div>
+        </nav>
+    </header>
+    <main class="relative w-full h-screen overflow-hidden">
+        <img src="img/c1.jpg" class="absolute inset-0 w-full h-full object-cover object-center">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+            <h1 class="text-3xl md:text-5xl font-bold text-white">EXPLORE THE CINEMATIC UNIVERSE</h1>
+            <P class="mt-4 text-base md:text-xl font-bold text-amber-100">Dive into thousands of movies and series in stunning HD quality. Your ultimate destination for endliess entertainment.</P>
+            <button class="mt-6 px-6 md:px-8 py-3 bg-cyan-400 text-black hover:bg-cyan-950 rounded-full">Film Now</button>
+        </div>
+        <div class="fixed right-3 md:right-4 top-[53%] z-50 flex flex-col gap-3 -translate-y-1/2">
+            <a href="#"class="w-8 h-8 sm:w-9 sm:h-9 bg-blue-400 backdrop-blur-md border border-white/20 text-white rounded-full flex items-center justify-center "><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"class="w-8 h-8 sm:w-9 sm:h-9 bg-blue-400 backdrop-blur-md border border-white/20 text-white rounded-full flex items-center justify-center "><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"class="w-8 h-8 sm:w-9 sm:h-9 bg-blue-400 backdrop-blur-md border border-white/20 text-white rounded-full flex items-center justify-center "><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </main>    
+    <!---------------------------------------------------section-1-------------------------------------------------------------------->
+    <div class="text-center mt-7 ">
+        <h1 class="tracking-[.2em] text-3xl text-black/70 font-semibold block">TOP PICKS FOR YOU</h1>
+    </div>
+    <section
+        style="width: 85%; max-width: 1200px; margin: 30px auto; border-radius: 20px; overflow: hidden; position: relative; height: 530px;">
+        <div class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar">
+            <div id="slide1" class="snap-center relative flex-none"style="min-width: 100%; max-width: 100%; flex: 0 0 100%; height: 530px;">
+                <img src="img/extra.jpg" class="w-full h-full object-top ">
+                <div class="absolute inset-0 bg-black/30"></div>
+                <div class="absolute inset-0 flex items-center justify-between px-4">
+                    <a href="#slide4" class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl "><</a>
+                    <a href="#slide2" class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl ">></a>
+                </div>
+                <div class="absolute bottom-28 left-0 text-center right-0 z-20">
+                    <h3 class="text-white text-2xl font-light tracking-widest">EXTRACTION2</h3>
+                    <p class="text-white text-lg mt-2 tracking-widest">No place to escape,fight till the end</p>
+                    <a href="#" class="bg-white text-black text-xs tracking-widest px-8 py-2 inline-block rounded-full mt-3 hover:bg-black hover:text-white duration-300">WATCH NOW</a>
+                </div>
+            </div>
+            <div id="slide2" class="snap-center relative flex-none"style="min-width: 100%; max-width: 100%; flex: 0 0 100%; height: 530px;">
+                <img src="img/musl.jpg" class="w-full h-full object-cover object-top">
+                <div class="absolute inset-0 bg-black/50"></div>
+                <div class="absolute inset-0 flex items-center justify-between px-4">
+                    <a href="#slide1" class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl "><</a>
+                    <a href="#slide3"class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl ">></a>
+                </div>
+                <div class="absolute bottom-28 left-0 text-center right-0 z-20">
+                    <h3 class="text-white text-2xl font-light tracking-widest">MUSLIHAT</h3>
+                    <p class=" text-white/70 text-lg mt-2 tracking-widest">Blood and fear +18</p>
+                    <a href="#"class="bg-white text-black text-xs tracking-widest px-8 py-2 inline-block rounded-full mt-3 hover:bg-black hover:text-white duration-300">EXPLORE MORE</a>
+                </div>
+            </div>
+            <div id="slide3" class="snap-center relative"
+                style="min-width: 100%; max-width: 100%; flex: 0 0 100%; height: 530px;">
+                <img src="img/fast.jpg" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/30"></div>
+                <div class="absolute inset-0 flex items-center justify-between px-4">
+                    <a href="#slide2" class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl "><</a>
+                    <a href="#slide4"class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl ">></a>
+                </div>
+                <div class="absolute bottom-28 left-0 text-center right-0 z-20">
+                    <h3 class="text-white text-2xl font-light tracking-widest">FAST&Furious</h3>
+                    <p class="text-white text-lg mt-2 tracking-widest">Speed and Fury</p>
+                    <a href="#"class="bg-white text-black text-xs tracking-widest px-8 py-2 inline-block rounded-full mt-3 hover:bg-black hover:text-white duration-300">EXPLOREMORE</a>
+                    </div>
+                    </div>
+                    <div id="slide4" class="snap-center relative" style="min-width:100%; max-width:100%; flex: 0 0 100%; height: 530px;">
+                        <img src="img/IMG-20260925-WA0024.jpg" class="w-full h-full object-top">
+                        <div class="absolute inset-0 bg-black/30"></div>
+                        <div class="absolute inset-0 flex items-center justify-between px-4">
+                            <a href="#slide3" class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl"><</a>
+                            <a href="#slide1"class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl">></a>
+                        </div>
+                        <div class="absolute bottom-28 left-0 text-center right-0 z-20">
+                            <h3 class="text-white text-2xl font-light tracking-widest">John Wick</h3>
+                            <p class="text-white text-lg mt-2 tracking-widest">Return Without Mercy</p>
+                            <a href="#"class="bg-white text-black text-xs tracking-widest px-8 py-2 inline-block rounded-full mt-3 hover:bg-black hover:text-white duration-300">EXPLORMORE</a>
+                        </div>
+                    </div>
+                    </div>
+                    </section>
+                    <!---------------------------------------------------section-2-------------------------------------------------------------------->
+            <section class=" container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 p-14">
+                <div class="relative h-80  group overflow-hidden ">
+                    <img src="img/spidar.jpg"
+                        class="w-full h-full object-cover transition-all duration-700  rounded-tr-[90px] rounded-bl-[90px] group-hover:rounded-tr-none group-hover:rounded-bl-none group-hover:rounded-tl-[90px] group-hover:rounded-br-[90px]">
+                    <div
+                        class="absolute inset-0 bg-black/40 flex flex-col justify-end items-center text-center p-6 text-white transition-all duration-700  rounded-tr-[90px] rounded-bl-[90px] group-hover:rounded-tr-none group-hover:rounded-bl-none group-hover:rounded-tl-[90px] group-hover:rounded-br-[90px]">
+                        <h3 class="text-xl font-bold tracking-widest">ACTION MOVIES</h3>
+                        <P class="text-sm opacity-90 mt-1">Adrenaline, Explosion & Endless Thrills</P>
+                    </div>
+                </div>
+                <div class="relative h-80 group">
+                    <img src="img/pop.jpg"
+                        class="w-full h-full object-cover transition-all duration-700 rounded-tr-[90px] rounded-bl-[90px] group-hover:rounded-tr-none group-hover:rounded-bl-none group-hover:rounded-tl-[90px] group-hover:rounded-br-[90px]">
+                    <div
+                        class="absolute inset-0 bg-black/40 flex flex-col justify-end items-center text-center p-6 text-white transition-all duration-700  rounded-tr-[90px] rounded-bl-[90px] group-hover:rounded-tr-none group-hover:rounded-bl-none group-hover:rounded-tl-[90px] group-hover:rounded-br-[90px]">
+                        <h3 class="text-xl font-bold tracking-widest">HORROR MOVIES</h3>
+                        <P class="text-sm opacity-90 mt-1">FFace Your Fears in the Dark</P>
+                    </div>
+                </div>
+                <div class="relative h-80 group">
+                    <img src="img/rom.jpg"
+                        class="w-full h-full object-cover transition-all duration-700 rounded-tr-[90px] rounded-bl-[90px] group-hover:rounded-tr-none group-hover:rounded-bl-none group-hover:rounded-tl-[90px] group-hover:rounded-br-[90px]">
+                    <div
+                        class="absolute inset-0 bg-black/40 flex flex-col justify-end items-center text-center p-6 text-white  transition-all duration-700  rounded-tr-[90px] rounded-bl-[90px] group-hover:rounded-tr-none group-hover:rounded-bl-none group-hover:rounded-tl-[90px] group-hover:rounded-br-[90px]">
+                        <h3 class="text-xl font-bold tracking-widest">ROMANCE MOVIES</h3>
+                        <P class="text-sm opacity-90 mt-1">Unforgettable Love Stories & Emotion</P>
+                    </div>
+                </div>
+            </section>
+            <!------------------------------------------------------section-4-------------------------------------------------->
+            <section class="relative w-full m-h-[700px] flex items-center ju py-16 px-4 bg-cover bg-center"
+                style="background-image: url(img/photo_2026-09-27_20-30-53.jpg); background-attachment: fixed;">
+                <div class="absolute inset-0 bg-black/55"></div>
+                <div class="relative z-10 w-full max-w-3xl m-auto outline-solid outline-white outline-1 rounded-xl">
+                    <details class="group border-b border-white py-6">
+                        <summary class="flex justify-between items-center list-none cursor-pointer ml-4">
+                            <span class="text-white font-bold tracking-[.2em] text-[18px]">ULTRA HD & 4K STREAMING</span>
+                        </summary>
+                        <P class="ml-4 hidden group-open:block pt-4 text-amber-100 text-[15px] leading-7 font-light max-w-xl">
+                            Watch your favorite movies and series in stunning crystal-clear resolution with immersive sound quality.</P>
+                    </details>
+                    <details class="group border-b border-white py-6">
+                        <summary class="flex justify-between items-center list-none cursor-pointer ml-4">
+                            <span class="text-white font-bold tracking-[.2em] text-[18px]">UNLIMITED ACCESS ANYTIME</span>
+                        </summary>
+                        <P class="ml-4 hidden group-open:block pt-4 text-amber-100 text-[15px] leading-7 font-light max-w-xl">Stream without limits on your phone, tablet, laptop, or smart TV whenever and wherever you want.
+                        </P>
+                    </details>
+                    <details class="group border-b py-6">
+                        <summary class="flex justify-between items-center list-none cursor-pointer ml-4">
+                            <span class="text-white font-bold tracking-[.2em] text-[18px]">PERSONALIZED RECOMMENDATIONS</span>
+                        </summary>
+                        <P class="ml-4 hidden group-open:block pt-4 text-amber-100 text-[15px] leading-7 font-light max-w-xl">
+                        Discover tailored movies and shows curated based on your taste and watching history.</P>
+                    </details>
+                </div>
+            </section>
+            <!-------------------------------------------------section-5--------------------------------------------->
+        <section class="py-24 bg-white">
+            <h2 class="text-center text-2xl font-bold tracking-[0.2em] mb-16 text-[#1f1a16]">POPLULAR CATEGORIES</h2>
+            <div class="flex justify-center gap-6 flex-wrap">
+                <div class="relative w-80 h-80 rounded-2xl overflow-hidden
+                        before:content-[''] before:absolute before:inset-0 before:bg-black/10
+                        after:content-[''] after:absolute after:inset-0 after:bg-[#1f1a16]/40 after:opacity-0 after:transition-all after:duration-500
+                        hover:after:opacity-50 group cursor-pointer">
+                    <img src="img/kh.jpg"
+                        class="w-full h-full object-cover transition duration-700">
+                    <div
+                        class="absolute bottom-8 left-8 text-white transition duration-500 group-hover:translate-y-0 translate-y-4">
+                        <p class="text-[10px] tracking-[0.3em] opacity-70">01</p>
+                        <p class="font-bold text-xl mt-1">SCT-FI & FANTASY</p>
+                        <p class="text-xs opacity-0 group-hover:opacity-70 transition duration-500 mt-2">Mind-bending worlds & future adventures</p>
+                    </div>
+                </div>
+                <div class="relative w-80 h-80 rounded-2xl overflow-hidden
+                        before:content-[''] before:absolute before:inset-0 before:bg-black/10
+                        after:content-[''] after:absolute after:inset-0 after:bg-[#1f1a16]/40 after:opacity-0 after:transition-all after:duration-500
+                        hover:after:opacity-50 group cursor-pointer">
+                    <img src="img/com.jpg"
+                        class="w-full h-full object-cover transition duration-700">
+                    <div
+                        class="absolute bottom-8 left-8  text-white transition duration-500 group-hover:translate-y-0 translate-y-4">
+                        <p class="text-[10px] tracking-[0.3em] opacity-70">02</p>
+                        <p class="font-bold text-xl mt-1">COMEDY & FAMILY</p>
+                        <p class="text-xs opacity-0 group-hover:opacity-70 transition duration-500 mt-2">Not-stop laughs & feel-good movies</p>
+                    </div>
+                </div>
+                <div class="relative w-80 h-80 rounded-2xl overflow-hidden
+                        before:content-[''] before:absolute before:inset-0 before:bg-black/10
+                        after:content-[''] after:absolute after:inset-0 after:bg-[#1f1a16]/40 after:opacity-0 after:transition-all after:duration-500
+                        hover:after:opacity-50 group cursor-pointer">
+                    <img src="img/gom.jpg"
+                        class="w-full h-full object-cover transition duration-700">
+                    <div
+                        class="absolute bottom-8 left-8 text-white transition duration-500 group-hover:translate-y-0 translate-y-4">
+                        <p class="text-[10px] tracking-[0.3em] opacity-70">03</p>
+                        <p class="font-bold text-xl mt-1">CRIME & THRILLER</p>
+                        <p class="text-xs opacity-0 group-hover:opacity-70 transition duration-500 mt-2">Suspense, mystery & intense drama</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------------------section-6--------------------------------------------------------------------->
+        <section class="py-16 px-6 bg-slate-300">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl font-bold tracking-[.2em] text-black">TRENDING NOW</h2>
+            </div>
+            <div class="max-w-5xl mx-auto flex flex-col gap-8">
+                <div
+                    class="bg-[#fdf9f3] flex items-center overflow-hidden shadow-sm border border-black/5 border-l-4 border-l-[#3ab1d6][border-radius:0px_0px_90px_0px]">
+                    <div class="flex-1 px-8 py-8">
+                        <h3 class="font-bold text-[16px]">EXTRACTION</h3>
+                        <p class="text-[12px] text-gray-500 leading-6 mt-2">A fearless mercenary takes on a deadly.</p>
+                        <div class="flex gap-2 mt-4">
+                            <span class="text-[10px] bg-red-600 text-white px-4 py-1.5 rounded-full cursor-pointer">WATCH NOW</span>
+                            <span class="text-[10px] bg-gray-700 text-white px-4 py-1.5 rounded-full cursor-pointer">TRAILER</span>
+                        </div>
+                    </div>
+                    <div class="w-80 h-52 shrink-0">
+                        <img src="img/extraction-2.jpg" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="bg-[#fdf9f3] flex items-center overflow-hidden shadow-sm border border-black/5 border-l-4 border-l-[#3ab1d6][border-radius:0px_0px_90px_0px]">
+                    <div class="flex-1 px-8 py-8">
+                        <h3 class="font-bold text-[16px]">INTERSTELLAR</h3>
+                        <p class="text-[12px] text-gray-500 leading-6 mt-2">A team of explorers travel a wo.</p>
+                        <div class="flex gap-2 mt-4">
+                            <span class="text-[10px] bg-red-600 text-white px-4 py-1.5 rounded-full cursor-pointer">WATCH NOW</span>
+                            <span class="text-[10px] bg-gray-700 text-white px-4 py-1.5 rounded-full cursor-pointer">TRAILER</span>
+                        </div>
+                    </div>
+                    <div class="w-80 h-52 shrink-0">
+                        <img src="img/&&&.jpg" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="bg-[#fdf9f3] flex items-center overflow-hidden shadow-sm border border-black/5 border-l-4 border-l-[#3ab1d6][border-radius:0px_0px_90px_0px]">
+                    <div class="flex-1 px-8 py-8">
+                        <h3 class="font-bold text-[16px]">THE DARK KNIGHT</h3>
+                        <p class="text-[12px] text-gray-500 leading-6 mt-2">When the menace known as the joker emer.</p>
+                        <div class="flex gap-2 mt-4">
+                            <span class="text-[10px] bg-red-600 text-white px-4 py-1.5 rounded-full cursor-pointer">WATCH NOW</span>
+                            <span class="text-[10px] bg-gray-700 text-white px-4 py-1.5 rounded-full cursor-pointer">TRAILER</span>
+                        </div>
+                    </div>
+                    <div class=" md:w-80 h-52 shrink-0">
+                        <img src="img/batman.jpg" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------------------------section-7------------------------------------------------------------->
+        <section class="w-full bg-[#fdf9f3] py-12 px-4">
+            <h2 class="text-center text-[22px] font-bold text-[#1e293b] mb-10">Contact & Support</h2>
+            <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="w-11 h-11 bg-[#1e3a5f] rounded-full flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-phone text-white text-[16px]"></i>
+                    </div>
+                    <p class="text-[11px] text-gray-500">Customer Support</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-11 h-11 bg-[#1e3a5f] rounded-full flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-envelope text-white text-[16px]"></i>
+                    </div>
+                    <p class="text-[11px] text-gray-500">Email Support</p>
+                </div>
+        
+                <div class="flex flex-col items-center">
+                    <div class="w-11 h-11 bg-[#1e3a5f] rounded-full flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-comment-dots text-white text-[16px]"></i>
+                    </div>
+                    <p class="text-[11px] text-gray-500">Live Chat 24/7</p>
+                </div>
+        
+                <div class="flex flex-col items-center">
+                    <div class="w-11 h-11 bg-[#1e3a5f] rounded-full flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-location-dot text-white text-[16px]"></i>
+                    </div>
+                    <p class="text-[11px] text-gray-500">FAQ & help</p>
+                </div>
+        
+            </div>
+        </section>
+        <footer class="w-full bg-[#6ac4d3] text-white py-4 px-6">
+            <div class="max-w-5xl mx-auto flex flex-row justify-between text-[12px]">
+                <span>Privacy Policy</span>
+                <span>Help Center</span>
+                <span>2026 CIMA-FLIX. All rights reserved.</span>
+            </div>
+        </footer>
+</body>
+</html>
